@@ -1,4 +1,5 @@
-import {About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas} from "@/components";
+import {About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works} from "@/components";
+import {StarsCanvas} from "@/components/canvas/Stars";
 
 export default function Home() {
     return (
