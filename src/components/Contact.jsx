@@ -2,7 +2,9 @@
 
 import {useState, useRef} from "react";
 import {motion} from "framer-motion";
-import emailjs from "@emailjs/browser";
+
+import {Resend} from "resend";
+import {Email} from "@/components/email"
 
 import SectionWrapper from "@/hoc/SectionWrapper";
 import {slideIn} from "@/utils/motion";
@@ -18,9 +20,39 @@ const Contact = () => {
     const [loading, setLoading] = useState(false);
 
     const changeHandler = (e) => {
+        const {name, value} = e.target;
+
+        setForm({...form, [name]: value});
     }
 
+
     const submitHandler = (e) => {
+        e.preventDefault();
+
+
+        const resend = new Resend('re_123456789')
+
+        setLoading(true);
+        resend.sendEmail({
+            from: form.email,
+            to: 'teodor.koynov2005@gmail.com',
+            subject: `A Question from ${form.name}`,
+            react: <Email name={form.name} email={form.email} question={form.message}/>
+        }).then(() => {
+            setLoading(false);
+            alert("Thank you! I will get back to you as soon as possible.");
+
+            setForm({
+                name: '',
+                email: '',
+                message: '',
+            });
+        }).catch(err => {
+            setLoading(false);
+            console.log("error", err.message);
+            alert("Something went wrong!")
+        })
+
     }
 
     return (
@@ -81,7 +113,7 @@ const Contact = () => {
                 variants={slideIn("right", "tween", 0.2, 1)}
                 className={"xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"}
             >
-                <EarthCanvas />
+                <EarthCanvas/>
             </motion.div>
         </div>
     )
