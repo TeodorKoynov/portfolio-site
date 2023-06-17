@@ -45,9 +45,9 @@ const About = () => {
             >
                 I am a skilled software developer with experience in TypeScript and JavaScript.
                 I have expertise in frameworks like Next.Js, Angular 14 and Three.js.
-                I'm a quick learner and collaborate closely with clients to create efficient, scalable, and
+                I&apos;m a quick learner and collaborate closely with clients to create efficient, scalable, and
                 user-friendly solutions that solve real-world problems.
-                Let's work together to bring your ideas to reality!
+                Let&apos;s work together to bring your ideas to reality!
             </motion.p>
 
             <div className={"mt-20 flex flex-wrap gap-10"}>

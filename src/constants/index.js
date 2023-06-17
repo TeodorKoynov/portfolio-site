@@ -181,7 +181,7 @@ const testimonials = [
     },
     {
         testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Teodor does.",
+            "I\'ve never met a web developer who truly cares about their clients\' success like Teodor does.",
         name: "Chris Brown",
         designation: "COO",
         company: "DEF Corp",
@@ -189,7 +189,7 @@ const testimonials = [
     },
     {
         testimonial:
-            "After Tedo optimized our website, our traffic increased by 50%. We can't thank them enough!",
+            "After Tedo optimized our website, our traffic increased by 50%. We can\'t thank them enough!",
         name: "Lisa Wang",
         designation: "CTO",
         company: "456 Enterprises",
