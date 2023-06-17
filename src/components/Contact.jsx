@@ -29,29 +29,33 @@ const Contact = () => {
     const submitHandler = (e) => {
         e.preventDefault();
 
-
-        const resend = new Resend('re_123456789')
-
         setLoading(true);
-        resend.sendEmail({
-            from: form.email,
-            to: 'teodor.koynov2005@gmail.com',
-            subject: `A Question from ${form.name}`,
-            react: <Email name={form.name} email={form.email} question={form.message}/>
-        }).then(() => {
-            setLoading(false);
-            alert("Thank you! I will get back to you as soon as possible.");
 
-            setForm({
-                name: '',
-                email: '',
-                message: '',
-            });
-        }).catch(err => {
-            setLoading(false);
-            console.log("error", err.message);
-            alert("Something went wrong!")
+        fetch("/api/send", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Origin": "*"
+            },
+            body: JSON.stringify({name: form.name, email: form.email, question: form.message})
         })
+            .then(res => res.json())
+            .then((data) => {
+                console.log("Data", data)
+                setLoading(false);
+                alert("Thank you! I will get back to you as soon as possible.");
+
+                setForm({
+                    name: '',
+                    email: '',
+                    message: '',
+                });
+            })
+            .catch((err) => {
+                setLoading(false);
+                console.log("error", err.message);
+                alert("Something went wrong!")
+            });
 
     }
 
