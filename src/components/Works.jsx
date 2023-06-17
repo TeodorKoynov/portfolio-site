@@ -6,10 +6,10 @@ import {motion} from "framer-motion";
 import github from '/public/assets/github.png';
 import SectionWrapper from "@/hoc/SectionWrapper";
 
-import liveDemo from '/public/assets/web.png';
 import {projects} from "@/constants";
 import {fadeIn, textVariant} from "@/utils/motion";
 import Image from "next/image";
+import {livedemo} from "../../public/assets";
 
 const ProjectCard = ({index, name, description, tags, image, live_demo_link, source_code_link}) => {
     return (
@@ -25,15 +25,15 @@ const ProjectCard = ({index, name, description, tags, image, live_demo_link, sou
                 className={"bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"}
             >
                 <div className={"relative w-full h-[230px]"}>
-                    <Image src={image} alt={name} className={"w-full h-full object-cover rounded-2xl"}/>
+                    <Image src={image} alt={name} className={"w-full h-full object-center object-cover rounded-2xl"}/>
 
                     <div className={"absolute inset-0 flex gap-2.5 justify-end m-3 card-img_hover"}>
-                        <div onClick={() => window.open(source_code_link, "_black")}
+                        <div onClick={() => window.open(live_demo_link, "_black")}
                              className={"black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"}>
-                            <Image src={liveDemo} alt={"live demo"} className={"w-1/2 h-1/2 object-contain"}/>
+                            <Image src={livedemo} alt={"live demo"} className={"w-1/2 h-1/2 object-contain"}/>
                         </div>
 
-                        <div onClick={() => window.open(live_demo_link, "_black")}
+                        <div onClick={() => window.open(source_code_link, "_black")}
                              className={"black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"}>
                             <Image src={github} alt={"github"} className={"w-1/2 h-1/2 object-contain"}/>
                         </div>

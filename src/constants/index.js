@@ -23,6 +23,7 @@ import {
     jobit,
     tripguide,
     threejs,
+    mysql, githubbattles, hackernews, expo, evolv, nextjs,
 } from "/public/assets/index";
 
 export const navLinks = [
@@ -81,8 +82,8 @@ const technologies = [
         icon: reactjs,
     },
     {
-        name: "Redux Toolkit",
-        icon: redux,
+        name: "Expo",
+        icon: expo,
     },
     {
         name: "Tailwind CSS",
@@ -93,8 +94,8 @@ const technologies = [
         icon: nodejs,
     },
     {
-        name: "MongoDB",
-        icon: mongodb,
+        name: "MySQL",
+        icon: mysql,
     },
     {
         name: "Three JS",
@@ -117,8 +118,8 @@ const technologies = [
 const experiences = [
     {
         title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        company_name: "Freelancer",
+        icon: reactjs,
         iconBg: "#383E56",
         date: "March 2020 - April 2021",
         points: [
@@ -130,39 +131,39 @@ const experiences = [
     },
     {
         title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
+        company_name: "Expo",
+        icon: expo,
         iconBg: "#E6DEDD",
         date: "Jan 2021 - Feb 2022",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
+            "Developing mobile applications using Expo, React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
+            "Implementing responsive design and ensuring compatibility for all mobiles.",
             "Participating in code reviews and providing constructive feedback to other developers.",
         ],
     },
     {
-        title: "Web Developer",
+        title: "Shopify Developer",
         company_name: "Shopify",
         icon: shopify,
         iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
+        date: "Jan 2022 - Feb 2022",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
+            "Developing and maintaining Shopify site.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Adding custom web functionality.",
         ],
     },
     {
         title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
+        company_name: "Evolv",
+        icon: evolv,
         iconBg: "#E6DEDD",
         date: "Jan 2023 - Present",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            "Developing and maintaining web applications using Next.js and other related technologies.",
+            "Creating custom high-quality software solutions for companies.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
             "Participating in code reviews and providing constructive feedback to other developers.",
         ],
@@ -172,7 +173,7 @@ const experiences = [
 const testimonials = [
     {
         testimonial:
-            "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+            "I thought it was impossible to make a website as beautiful as our product, but Tedo proved me wrong.",
         name: "Sara Lee",
         designation: "CFO",
         company: "Acme Co",
@@ -180,7 +181,7 @@ const testimonials = [
     },
     {
         testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Rick does.",
+            "I've never met a web developer who truly cares about their clients' success like Teodor does.",
         name: "Chris Brown",
         designation: "COO",
         company: "DEF Corp",
@@ -188,7 +189,7 @@ const testimonials = [
     },
     {
         testimonial:
-            "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+            "After Tedo optimized our website, our traffic increased by 50%. We can't thank them enough!",
         name: "Lisa Wang",
         designation: "CTO",
         company: "456 Enterprises",
@@ -198,48 +199,48 @@ const testimonials = [
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "Hacker News",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "Web-based platform that allows users to read the latest Hacker News posts.",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "mongodb",
+                name: "forum",
                 color: "green-text-gradient",
             },
             {
-                name: "tailwind",
+                name: "css",
                 color: "pink-text-gradient",
             },
         ],
-        image: carrent,
-        source_code_link: "https://github.com/",
-        live_demo_link: "",
+        image: hackernews,
+        source_code_link: "https://github.com/TeodorKoynov/HackerNews",
+        live_demo_link: "https://hacker-news-self.vercel.app/",
     },
     {
-        name: "Job IT",
+        name: "Github Battles",
         description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+            "Web application that enables users to look at the most famous repositories and compare their Github's profile to a friend's one.",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "restapi",
+                name: "github",
                 color: "green-text-gradient",
             },
             {
-                name: "scss",
+                name: "darkmode",
                 color: "pink-text-gradient",
             },
         ],
-        image: jobit,
-        source_code_link: "https://github.com/",
-        live_demo_link: "",
+        image: githubbattles,
+        source_code_link: "https://github.com/TeodorKoynov/GithubBattles",
+        live_demo_link: "https://github-battles-seven.vercel.app/",
     },
     {
         name: "Trip Guide",
@@ -265,4 +266,4 @@ const projects = [
     },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export {services, technologies, experiences, testimonials, projects};

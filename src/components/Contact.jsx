@@ -69,7 +69,7 @@ const Contact = () => {
                 <h3 className={"text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]"}>Contact.</h3>
 
                 <form action="" ref={formRef} onSubmit={submitHandler} className={"mt-12 flex flex-col gap-8"}>
-                    <label className={"flex flex-col"} htmlFor="">
+                    <label className={"flex flex-col"} htmlFor={"name"}>
                         <span className={"text-white font-medium mb-4"}>Your Name</span>
                         <input
                             type="text"
@@ -81,7 +81,7 @@ const Contact = () => {
                         />
                     </label>
 
-                    <label className={"flex flex-col"} htmlFor="">
+                    <label className={"flex flex-col"} htmlFor={"email"}>
                         <span className={"text-white font-medium mb-4"}>Your Email</span>
                         <input
                             type="email"
@@ -93,7 +93,7 @@ const Contact = () => {
                         />
                     </label>
 
-                    <label className={"flex flex-col"} htmlFor="">
+                    <label className={"flex flex-col"} htmlFor={"message"}>
                         <span className={"text-white font-medium mb-4"}>Your Message</span>
                         <textarea
                             rows={7}
