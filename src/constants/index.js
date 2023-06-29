@@ -23,7 +23,7 @@ import {
     jobit,
     tripguide,
     threejs,
-    mysql, githubbattles, hackernews, expo, evolv, nextjs,
+    mysql, githubbattles, hackernews, expo, evolv, nextjs, shop, shirtEditor, promptShare
 } from "/public/assets/index";
 
 export const navLinks = [
@@ -199,70 +199,70 @@ const testimonials = [
 
 const projects = [
     {
-        name: "Hacker News",
+        name: "Shirt Editor",
         description:
-            "Web-based platform that allows users to read the latest Hacker News posts.",
+            "Web-based platform that allows users to customized t-shirt model with custom logo, pattern and color.",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "forum",
+                name: "three",
                 color: "green-text-gradient",
             },
             {
-                name: "css",
+                name: "tailwind",
                 color: "pink-text-gradient",
             },
         ],
-        image: hackernews,
-        source_code_link: "https://github.com/TeodorKoynov/HackerNews",
-        live_demo_link: "https://hacker-news-self.vercel.app/",
+        image: shirtEditor,
+        source_code_link: "https://github.com/TeodorKoynov/",
+        live_demo_link: "https://shirt-editor.vercel.app/",
     },
     {
-        name: "Github Battles",
+        name: "Solid Headphones",
         description:
-            "Web application that enables users to look at the most famous repositories and compare their Github's profile to a friend's one.",
+            "Web ecommerce application that enables users to buy online products. Payments are processed using Stripe. Content is managed using Sanity",
         tags: [
             {
-                name: "react",
+                name: "next",
                 color: "blue-text-gradient",
             },
             {
-                name: "github",
+                name: "stripe",
                 color: "green-text-gradient",
             },
             {
-                name: "darkmode",
+                name: "sanity",
                 color: "pink-text-gradient",
             },
         ],
-        image: githubbattles,
-        source_code_link: "https://github.com/TeodorKoynov/GithubBattles",
-        live_demo_link: "https://github-battles-seven.vercel.app/",
+        image: shop,
+        source_code_link: "https://github.com/TeodorKoynov",
+        live_demo_link: "https://shop-flame-six.vercel.app/",
     },
     {
-        name: "Trip Guide",
+        name: "PromptShare",
         description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+            "A collection of cool AI prompts. Users have the ability to create, share and browse prompts of users",
         tags: [
             {
                 name: "nextjs",
                 color: "blue-text-gradient",
             },
             {
-                name: "supabase",
+                name: "mongodb",
                 color: "green-text-gradient",
             },
             {
-                name: "css",
+                name: "googleAuth",
                 color: "pink-text-gradient",
             },
         ],
-        image: tripguide,
-        source_code_link: "https://github.com/",
-        live_demo_link: "",
+        image: promptShare,
+        source_code_link: "https://github.com/TeodorKoynov",
+        live_demo_link: "https://prompt-share-plum.vercel.app/",
     },
 ];
 

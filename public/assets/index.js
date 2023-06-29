@@ -35,6 +35,9 @@ import githubbattles from "./githubbattles.png";
 import hackernews from "./hackernews.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import shirtEditor from "./shirt-editor.png";
+import shop from "./shop.png";
+import promptShare from "./promptShare.png";
 
 import livedemo from "./livedemo.png";
 
@@ -74,4 +77,7 @@ export {
     githubbattles,
     hackernews,
     livedemo,
+    promptShare,
+    shop,
+    shirtEditor,
 };
